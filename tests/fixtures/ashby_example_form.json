@@ -1,0 +1,87 @@
+{
+ "data": {
+  "jobPosting": {
+   "id": "00000000-0000-4000-8000-000000000001",
+   "title": "Data Scientist, Product",
+   "applicationForm": {
+    "sections": [
+     {
+      "title": null,
+      "descriptionHtml": null,
+      "fieldEntries": [
+       {
+        "field": {
+         "id": "Full Nam",
+         "path": "Full Nam",
+         "title": "Full Name",
+         "type": "String",
+         "isNullable": false
+        },
+        "isRequired": true,
+        "descriptionHtml": null
+       },
+       {
+        "field": {
+         "id": "Why do y",
+         "path": "Why do y",
+         "title": "Why do you want to join Acme?",
+         "type": "LongText",
+         "isNullable": false
+        },
+        "isRequired": true,
+        "descriptionHtml": null
+       },
+       {
+        "field": {
+         "id": "What is ",
+         "path": "What is ",
+         "title": "What is the most impressive thing you’ve done in your career?",
+         "type": "LongText",
+         "isNullable": false
+        },
+        "isRequired": true,
+        "descriptionHtml": null
+       },
+       {
+        "field": {
+         "id": "Have you",
+         "path": "Have you",
+         "title": "Have you built anything with Acme you'd like to share?",
+         "type": "LongText",
+         "isNullable": false
+        },
+        "isRequired": false,
+        "descriptionHtml": "<p>Please share a link, along with the password if it's password-protected</p>"
+       },
+       {
+        "field": {
+         "id": "How did ",
+         "path": "How did ",
+         "title": "How did you hear about us?",
+         "type": "ValueSelect",
+         "isNullable": false,
+         "selectableValues": [
+          {
+           "label": "LinkedIn",
+           "value": "LinkedIn"
+          },
+          {
+           "label": "Website",
+           "value": "Website"
+          },
+          {
+           "label": "Other",
+           "value": "Other"
+          }
+         ]
+        },
+        "isRequired": true,
+        "descriptionHtml": null
+       }
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

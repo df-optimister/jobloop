@@ -1,0 +1,24 @@
+{
+ "id": "00000000-0000-4000-8000-000000000001",
+ "title": "Data Scientist, Product",
+ "department": "EPD",
+ "team": "Product",
+ "employmentType": "FullTime",
+ "location": "Berlin",
+ "secondaryLocations": [
+  {
+   "location": "London",
+   "address": {
+    "postalAddress": {
+     "addressCountry": "United Kingdom"
+    }
+   }
+  }
+ ],
+ "isListed": true,
+ "isRemote": false,
+ "workplaceType": "OnSite",
+ "jobUrl": "https://jobs.ashbyhq.com/acme/00000000-0000-4000-8000-000000000001",
+ "applyUrl": "https://jobs.ashbyhq.com/acme/00000000-0000-4000-8000-000000000001/application",
+ "descriptionPlain": "ABOUT ACME\n\nAcme builds tools for small teams.\n\nWHAT YOU'LL DO\n\n - Own the metrics for a product area and drive measurable improvement in activation, engagement, and retention.\n\n - Design and run experiments, and act on the results.\n"
+}

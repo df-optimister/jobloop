@@ -1,0 +1,5 @@
+Football Data Scientist — Example FC
+We are looking for a data scientist to build player valuation models using event data.
+You will work in Python with our analytics team on models such as expected goals and possession value.
+Requirements: Python, SQL, experience with event data, strong communication with coaching staff.
+Nice to have: R, dashboarding, experience with player valuation frameworks.

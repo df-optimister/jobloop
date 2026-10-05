@@ -1,0 +1,42 @@
+{
+  "lessons": [
+    {
+      "id": "L-001", "layer": "L1 구조",
+      "rule": "회사의 현재 과제·핵심 목표·인재상(brief의 co_ 사실 또는 jd_text)을 먼저 짚고, 내 근거 1~2개를 그 과제에 직접 잇고, 그 직무에서 할 일로 끝낸다.",
+      "slots": ["회사 과제(co_ 또는 JD)", "내 근거(profile id)", "직무에서의 다음 행동"],
+      "conditions": {"doc_type": ["서술형", "커버레터"], "question_intent": ["지원동기", "직무역량"]},
+      "mechanism": "평가자는 '우리 회사를 위해 쓴 글인가'를 본다 — 평가 방식에서 나오는 원리라 직무·시장 무관.",
+      "status": "확정", "status_reason": "사용자 원칙 승인(예시)",
+      "evidence": ["example-application-a", "example-application-b"],
+      "updated_at": "2026-01-01"
+    },
+    {
+      "id": "L-002", "layer": "L3 표현",
+      "rule": "같은 지원서 안에서 맺음말·비유·회사 수치를 같은 형태로 반복하지 않는다.",
+      "conditions": {"doc_type": ["서술형", "커버레터", "짧은 칸"], "submission": ["CV+문항", "문항만"]},
+      "mechanism": "여러 문항을 연속으로 읽는 평가자에게 반복은 템플릿으로 읽힌다.",
+      "status": "확정", "status_reason": "품질형, 여러 건에서 관찰 + 사용자 승인(예시)",
+      "evidence": ["example-application-a", "example-application-c"],
+      "updated_at": "2026-01-01"
+    },
+    {
+      "id": "L-003", "layer": "L2 선택",
+      "rule": "CV에는 결함·실패 서술을 넣지 않는다 — 실패담은 그것을 묻는 문항과 면접에서만.",
+      "conditions": {"doc_type": ["cv"]},
+      "mechanism": "서류 스크리닝에서 결함 서술은 솔직함이 아니라 결함으로 읽힌다.",
+      "status": "확정", "status_reason": "사용자 승인(예시)",
+      "evidence": ["example-application-b"],
+      "promoted_to": "plan avoid_evidence_ids + claims_integrity",
+      "updated_at": "2026-01-01"
+    },
+    {
+      "id": "L-004", "layer": "L2 선택",
+      "rule": "한국 대기업 일반직 공채는 첫 배치 직무(현장)에 맞는 근거를 앞세운다.",
+      "conditions": {"doc_type": ["서술형"], "role_kind": ["generalist"], "market": ["한국 공채"], "language": ["ko"], "company_size": ["대기업"]},
+      "mechanism": "현장 우선 배치 직무에서 평가자는 첫 업무 적응 가능성을 본다.",
+      "status": "가설", "status_reason": "1건 관찰(예시)",
+      "evidence": ["example-application-d"],
+      "updated_at": "2026-01-01"
+    }
+  ]
+}

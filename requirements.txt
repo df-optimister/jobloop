@@ -1,0 +1,8 @@
+langgraph>=1.0
+langchain-core>=1.0
+langchain-anthropic
+langchain-openai
+# langchain-google-genai   # Gemini 키가 생기면 주석 해제
+pydantic>=2
+python-dotenv
+python-docx     # 최종 CV .docx 생성용 (지원서 완성본/ 폴더로 출력)

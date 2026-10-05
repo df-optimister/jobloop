@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+# 개인 데이터 — 공개 저장소에 절대 커밋하지 않는다
+profile_db.json
+lessons.json
+lessons.md
+jd_*.txt
+runs/
+applications/
+지원서 완성본/

@@ -1,0 +1,50 @@
+{
+  "candidate": {
+    "name": "Alex Example",
+    "headline": "Data Analyst — Modelling & Product Insight",
+    "location": "London, UK",
+    "email": "alex@example.com",
+    "linkedin": "https://linkedin.com/in/alex-example",
+    "github": "https://github.com/alex-example"
+  },
+  "entries": [
+    {"id": "edu_msc", "type": "education", "use": "default", "period": "Sep 2024 – Sep 2025",
+     "text": "MSc Data Science, Example University, Sep 2024 – Sep 2025. Merit overall; dissertation graded Distinction."},
+    {"id": "edu_ba", "type": "education", "use": "default", "period": "Sep 2019 – Jul 2022",
+     "text": "BA (Hons) Economics, Sample College, Sep 2019 – Jul 2022. First Class Honours."},
+    {"id": "proj_pipeline", "type": "project", "use": "default", "period": "May 2025 – Aug 2025",
+     "text": "MSc dissertation: built a reproducible Python pipeline joining two public datasets with integrity checks, and engineered features for a churn-prediction model.",
+     "emphasis": "analytical rigour",
+     "angle": "Technical JD: present the pipeline and models. Non-technical JD: lead with evidence-based decision-making, then one concrete finding."},
+    {"id": "proj_pipeline_models", "type": "project", "use": "default", "parent": "proj_pipeline",
+     "text": "Trained gradient-boosting and logistic regression models; best AUC 0.82, held at 0.80 on a held-out year."},
+    {"id": "proj_app", "type": "project", "use": "default", "period": "Jan 2026 – present",
+     "text": "Booking app for a local gym (client business): sole developer; designed the PostgreSQL schema so every booking is an analysable record."},
+    {"id": "proj_app_failure", "type": "project", "use": "default", "parent": "proj_app",
+     "text": "A missed timezone conversion double-booked classes for one week; traced the cause, fixed it and added a regression test.",
+     "angle": "Failure story — use only when a question asks for a setback; never on the CV."},
+    {"id": "work_coordinator", "type": "experience", "use": "default", "period": "Jun 2023 – Aug 2023",
+     "text": "Project Coordinator, Example Ltd. Coordinated three partner organisations on a software rollout, writing documentation for different technical levels.",
+     "emphasis": "communication and mediation"},
+    {"id": "work_team_lead", "type": "experience", "use": "default", "period": "Sep 2022 – May 2023",
+     "text": "Shift Team Leader, Sample Retail. Led a four-person team, managing rotas and briefing the store manager.",
+     "emphasis": "leadership"},
+    {"id": "skills_python", "type": "skills", "use": "default",
+     "text": "Python (Pandas, NumPy, scikit-learn), reproducible ETL, Git/GitHub."},
+    {"id": "skills_sql", "type": "skills", "use": "default",
+     "text": "SQL: PostgreSQL, schema design, constraints."},
+    {"id": "skills_dl", "type": "skills", "use": "optional",
+     "when_to_use": "JDs mentioning deep learning or computer vision",
+     "text": "Deep learning (coursework level): PyTorch CNNs, transfer learning."},
+    {"id": "add_languages", "type": "header", "use": "default",
+     "text": "Languages: English (native), Spanish (conversational)."},
+    {"id": "add_right_to_work", "type": "header", "use": "default",
+     "text": "Right to work: full UK work authorisation."}
+  ],
+  "known_gaps": [
+    "years of professional data science experience",
+    "led a data science team",
+    "deployed models to production"
+  ],
+  "_known_gaps_note": "Phrases that must never appear in any document (fictional example)."
+}
