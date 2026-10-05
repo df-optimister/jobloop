@@ -84,8 +84,8 @@ START → writer ──Send×N──▶ judge (parallel) → aggregate
 - When the round limit is reached the draft is `escalate`d to the human with the outstanding failures. The default
   `MAX_ROUNDS` is 4.
 - Formatting/tone judges (`tone_length`, `uk_cv_convention`, `bullet_format`) run on `gpt-5-mini`, a separate rate-limit
-  bucket from `gpt-5` — new OpenAI organisations have low per-model limits (observed: TPM 10,000 and RPD 50 for gpt-5),
-  so without this split the parallel fan-out stalls quickly.
+  bucket from `gpt-5` — accounts on low usage tiers can hit per-model rate limits quickly when the panel fans out in
+  parallel, and splitting light checks onto a second model spreads that load.
 
 ## Running
 

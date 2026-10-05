@@ -1,11 +1,56 @@
+# ---- Secrets ----
 .env
-__pycache__/
-*.pyc
-# 개인 데이터 — 공개 저장소에 절대 커밋하지 않는다
-profile_db.json
-lessons.json
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---- Personal data: never commit (only the fictional *.example.* files are public) ----
+profile_db*.json
+!profile_db.example.json
+lessons*.json
+!lessons.example.json
 lessons.md
 jd_*.txt
-runs/
+*_prior_answers*.json
+.public_denylist.txt
+
+# ---- Application work & generated outputs ----
 applications/
+runs/
 지원서 완성본/
+drafts/
+drafts_dryrun/
+sources/
+answers_spec*.json
+*.unapproved.txt
+retro.md
+*.log
+
+# ---- Documents (CVs, answers, proposals) ----
+*.docx
+*.doc
+*.pdf
+~$*
+
+# ---- Local / tool state ----
+.claude/*
+!.claude/skills/
+.claude/skills/*
+!.claude/skills/apply/
+*.sqlite
+*.sqlite3
+*.db
+docs/superpowers/
+
+# ---- Python & OS ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+desktop.ini
